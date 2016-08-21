@@ -1,0 +1,39 @@
+.footer
+	position relative
+	z-index 2
+	text-align center
+	padding-bottom 10px
+	clearfix()
+	.copyright, .made-by
+		margin 10px 0
+	+above(880px)
+		min-height 64px
+		font-size: 0.763rem
+		line-height 64px
+		padding-bottom 0
+		.copyright
+			float left
+			margin-right 30px
+			margin-top 0
+			margin-bottom 0
+		.made-by
+			float left
+			margin-top 0
+			margin-bottom 0
+		.phone-block
+			line-height 60px
+			margin-top 0
+			margin-bottom 0
+			height 64px
+	+above(1200px)
+		.copyright
+			margin-right 100px
+	&:before
+		content ''
+		height 10px
+		background linear-gradient(to top, rgba(black, 0.18), transparent)
+		width 100%
+		top -10px
+		position absolute
+		left 0
+		z-index 2
